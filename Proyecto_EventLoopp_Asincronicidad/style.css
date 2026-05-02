@@ -1,0 +1,22 @@
+#label-agrega{
+    text-align: center;
+    display: flex;
+
+}
+
+#pedidos-proceso-contenedor{
+background-color: #f0f0f0; 
+  border: 2px solid rgb(222, 247, 80);    
+  padding: 20px;              
+  margin: 10px;              
+  display: flex;              
+  width: 300px;      
+}
+#pedidos-listos-contenedor{
+background-color: #f0f0f0; 
+  border: 2px solid rgb(3, 239, 101);    
+  padding: 20px;              
+  margin: 10px;              
+  display: flex;              
+  width: 300px;      
+}
