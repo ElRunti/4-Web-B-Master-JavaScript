@@ -1,0 +1,6 @@
+[
+  { "nombre": "Ana", "edad": 25, "activo": true, "hobbies": ["leer", "correr"] },
+  { "nombre": "Pablo", "edad": 30, "activo": false, "hobbies": ["cine"] },
+  { "nombre": "Lucía", "edad": 22, "activo": true, "hobbies": ["pintar", "baile", "viajar"] },
+  { "nombre": "Marcos", "edad": 40, "activo": true, "hobbies": ["ajedrez"] }
+]
