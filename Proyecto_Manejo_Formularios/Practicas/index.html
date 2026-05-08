@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo 07 · Ejercicios guiados</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 600px; margin: 40px auto; padding: 0 20px; color: #222; }
+    h1 { color: #11111E; }
+    h2 { margin-top: 32px; border-left: 3px solid #11111E; padding-left: 10px; }
+    form { display: flex; flex-direction: column; gap: 8px; background: #f7f7fa; padding: 16px; border-radius: 8px; }
+    input, textarea { padding: 6px 8px; font-size: 15px; border: 1px solid #ccc; border-radius: 4px; }
+    button { padding: 8px; background: #11111E; color: white; border: 0; border-radius: 4px; cursor: pointer; }
+    ul { list-style: none; padding: 0; }
+    li { background: white; padding: 8px 10px; border: 1px solid #e4e4ea; border-radius: 4px; margin-top: 6px; display: flex; justify-content: space-between; align-items: center; }
+    li button { background: #c0392b; padding: 4px 10px; font-size: 13px; }
+    .error { color: #c0392b; font-size: 13px; min-height: 16px; }
+    .hint { color: #666; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <h1>07 · Ejercicios guiados</h1>
+  <p>Cada ejercicio tiene su propio form. Abre <code>07-ejercicios.js</code> y resuélvelos en orden.</p>
+
+  <!-- Ejercicio 1 -->
+  <h2>1. Leer un input en consola</h2>
+  <p class="hint">Captura el valor y haz <code>console.log(nombre)</code>.</p>
+  <form id="form1">
+    <input type="text" id="input1" placeholder="Escribe algo">
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- Ejercicio 2 -->
+  <h2>2. Mostrar los datos en pantalla</h2>
+  <p class="hint">Pon el valor leído dentro de <code>#salida2</code>.</p>
+  <form id="form2">
+    <input type="text" id="input2" placeholder="Tu nombre">
+    <button type="submit">Mostrar</button>
+  </form>
+  <p>Hola, <span id="salida2">???</span> 👋</p>
+
+  <!-- Ejercicio 3 -->
+  <h2>3. Validar vacío</h2>
+  <p class="hint">Si el input está vacío → mostrar "Campo obligatorio" en <code>#error3</code>.</p>
+  <form id="form3">
+    <input type="text" id="input3" placeholder="Ciudad">
+    <button type="submit">Enviar</button>
+  </form>
+  <p class="error" id="error3"></p>
+
+  <!-- Ejercicio 4 -->
+  <h2>4. Validar email con @ y .</h2>
+  <p class="hint">Regla mínima: debe incluir "@" y ".".</p>
+  <form id="form4">
+    <input type="text" id="input4" placeholder="Email">
+    <button type="submit">Validar</button>
+  </form>
+  <p class="error" id="error4"></p>
+
+  <!-- Ejercicio 5 -->
+  <h2>5. Borrar una tarjeta</h2>
+  <p class="hint">Agrega el nombre a la lista. Cada tarjeta debe tener un botón "x" que la elimine.</p>
+  <form id="form5">
+    <input type="text" id="input5" placeholder="Nombre">
+    <button type="submit">Agregar</button>
+  </form>
+  <ul id="lista5"></ul>
+
+  <script src="main.js"></script>
+</body>
+</html>

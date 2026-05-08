@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Unete y se parte del movimiento</h1>
+    <h2>MusicFestival Red te invita a ser parte de la red de empresarios</h2>
+    <p>Registrate para ser parte de nosotros, recuerda que debes validar tu identidad para poder pertencer al sitio web</p>
+    <form action="submit" id="form">
+        <div id="contenedor-nombre">
+            <label id="label-nombre">Nombre</label>
+            <input id="input-nombre" type="text" placeholder="Introduce tu nombre" required>
+        </div>
+        <br><br>
+        <div id="contenedor-email">
+            <label id="label-correo">Correo electronnico</label>
+            <input type="email" id="input-email" placeholder="Introduce tu correo" required>
+        </div>
+        <br><br>
+        <div id="contenedor-telefono">
+            <label>Telfono:</label>
+            <input type="number" id="input-telefono" placeholder="Introduce tu telefono" required>
+        </div>
+        <br><br>
+        <div id="contenedor-negocio"></div>
+            <label>Selecciona el tipo de negocio que estas interesado</label>
+            <label><input type="checkbox" name="negocio" value="contacto-manager">Contactar managers de artistas</label>
+            <label><input type="checkbox" name="negocio" value="organizar-festivales">Organizar festivales</label>
+        <label><input type="checkbox" name="negocio" value="eventos-privados">Eventos privados</label>
+        </div>
+        <div id="contenedor-genero">
+            <label id="label-genero">Selecciona tu genero</label>
+            <label><input type="radio" name="genero" value="masculino">Masculino</label>
+            <label><input type="radio" name="genero" value="femenino">Femenino</label>
+        <label><input type="radio" name="genero" value="otro">Otro</label>
+        </div>
+        <div id="contenedor-pais">
+            <label for="pais">Pais:</label>
+            <select id="pais" name="pais">
+                <option value="mexico">Mexico</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+            </select>
+        </div>
+        <div id="contenedor-archivo">
+            <label for="archivo">Sube tu archivo para validar tu identidad:</label>
+            <input type="file" id="archivo" name="archivo">
+        </div>
+        <div id="contenedor-evento">
+            <label id="label-evento">Selecciona la fecha de tu evento mas proximo</label>
+            <input type="date" id="fecha" name="fecha">
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
